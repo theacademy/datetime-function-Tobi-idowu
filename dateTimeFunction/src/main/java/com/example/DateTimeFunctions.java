@@ -68,9 +68,9 @@ public class DateTimeFunctions {
 		//YOUR CODE STARTS HERE
 
         // calculate the magnitude of each difference
-        int yearDifference = Maths.abs(date1.getYear() - date2.getYear());
-        int monthDifference = Maths.abs(date1.getMonthValue() - date2.getMonthValue());
-        int dayDifference = Maths.abs(date1.getDayOfYear() - date2.getDayOfYear());
+        int yearDifference = Math.abs(date1.getYear() - date2.getYear());
+        int monthDifference = Math.abs(date1.getMonthValue() - date2.getMonthValue());
+        int dayDifference = Math.abs(date1.getDayOfYear() - date2.getDayOfYear());
 
         // format the results as a string
         String result = String.format("Year-%d:Months-%d:Days-%d", yearDifference, monthDifference, dayDifference);
