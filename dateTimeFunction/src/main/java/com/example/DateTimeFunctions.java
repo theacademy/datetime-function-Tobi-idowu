@@ -73,7 +73,7 @@ public class DateTimeFunctions {
         int dayDifference = Math.abs(date1.getDayOfYear() - date2.getDayOfYear());
 
         // format the results as a string
-        String result = String.format("Year-%d:Months-%d:Days-%d", yearDifference, monthDifference, dayDifference);
+        String result = String.format("Years-%d:Months-%d:Days-%d", yearDifference, monthDifference, dayDifference);
 
         return result;
 		//YOUR CODE ENDS HERE
