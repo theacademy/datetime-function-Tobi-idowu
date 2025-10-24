@@ -67,13 +67,11 @@ public class DateTimeFunctions {
 	public static String getTimeDifference(LocalDate date1, LocalDate date2) {
 		//YOUR CODE STARTS HERE
 
-        // calculate the magnitude of each difference
-        int yearDifference = Math.abs(date1.getYear() - date2.getYear());
-        int monthDifference = Math.abs(date1.getMonthValue() - date2.getMonthValue());
-        int dayDifference = Math.abs(date1.getDayOfYear() - date2.getDayOfYear());
+        // calculate the difference between the two dates
+        Period period = Period.between(date1, date2);
 
         // format the results as a string
-        String result = String.format("Years-%d:Months-%d:Days-%d", yearDifference, monthDifference, dayDifference);
+        String result = String.format("Years-%d:Months-%d:Days-%d", period.getYears(), period.getMonths(), period.getDays());
 
         return result;
 		//YOUR CODE ENDS HERE
